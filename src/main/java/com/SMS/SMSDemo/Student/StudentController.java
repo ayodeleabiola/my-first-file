@@ -11,11 +11,10 @@ import java.util.List;
 
 @RestController
 @RequestMapping(path="api/v1/student")
-public class StudentController {
-  private final StudentService studentService;
+public class StudentController{
  @Autowired
  public StudentController(StudentService studentService){
-     this.studentService=studentService;
+
  }
     @GetMapping
     public List<Student> getStudent(StudentService studentService){
